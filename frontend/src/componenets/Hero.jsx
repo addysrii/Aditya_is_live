@@ -15,43 +15,43 @@ const LandingPage = () => {
     {
       id: 1,
       title: "Web Development",
-      icon: <Code className="w-8 h-8 text-orange-500" />,
+      icon: <Code className="w-8 h-8 text-purple-500" />,
       description: "Custom websites and web applications for galleries, museums, and cultural institutions with immersive experiences.",
     },
     {
       id: 2,
       title: "Mobile Development",
-      icon: <Smartphone className="w-8 h-8 text-orange-500" />,
+      icon: <Smartphone className="w-8 h-8 text-purple-500" />,
       description: "Native Android and iOS apps for virtual tours, interactive exhibitions, and cultural education.",
     },
     {
       id: 3,
       title: "AI & Machine Learning",
-      icon: <Brain className="w-8 h-8 text-orange-500" />,
+      icon: <Brain className="w-8 h-8 text-purple-500" />,
       description: "AI-powered art analysis, recommendation systems, and personalized cultural experiences.",
     },
     {
       id: 4,
       title: "Blockchain Solutions",
-      icon: <Database className="w-8 h-8 text-orange-500" />,
+      icon: <Database className="w-8 h-8 text-purple-500" />,
       description: "NFT platforms, digital art authentication, and secure ownership tracking for cultural assets.",
     },
     {
       id: 5,
       title: "IoT Integration",
-      icon: <Cpu className="w-8 h-8 text-orange-500" />,
+      icon: <Cpu className="w-8 h-8 text-purple-500" />,
       description: "Smart museum solutions, interactive installations, and connected cultural spaces.",
     }
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-black via-black to-purple-900/20 pt-24 px-4">
+    <section className="min-h-screen bg-gradient-to-b from-black to-purple-900/20 pt-24 px-4">
       {/* Hero Section */}
       <div className="relative text-center mb-16">
-        <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500 mb-4 drop-shadow-lg">
+        <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500 mb-4">
           Where Technology Meets Art
         </h1>
-        <p className="text-xl text-gray-200 max-w-2xl mx-auto font-medium drop-shadow-lg">
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
           Transforming the cultural landscape through innovative IT solutions
         </p>
         <div className="absolute left-1/2 -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full blur-sm"></div>
@@ -70,7 +70,7 @@ const LandingPage = () => {
         {services.map((service) => (
           <div 
             key={service.id}
-            className="group relative bg-black/60 backdrop-blur-md rounded-lg p-6 border border-orange-500/20 hover:border-orange-500/40 transition-all duration-500 shadow-lg"
+            className="group relative bg-black/40 backdrop-blur-sm rounded-lg p-6 border border-orange-500/20 hover:border-orange-500/40 transition-all duration-500"
           >
             {/* Decorative Corners */}
             <div className="absolute -top-2 -left-2 w-8 h-8 border-t-2 border-l-2 border-orange-500/40 rounded-tl-lg"></div>
@@ -80,8 +80,8 @@ const LandingPage = () => {
             <h3 className="text-2xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
               {service.title}
             </h3>
-            <p className="text-gray-200 mb-4 font-medium">{service.description}</p>
-            <button className="flex items-center text-orange-500 hover:text-orange-400 transition-colors">
+            <p className="text-gray-300 mb-4">{service.description}</p>
+            <button className="flex items-center text-purple-500 hover:text-purple-400 transition-colors">
               Learn More <ArrowRight className="ml-2 w-4 h-4" />
             </button>
 
@@ -92,7 +92,7 @@ const LandingPage = () => {
       </div>
 
       {/* Culture & Technology Section */}
-      <div className="relative bg-black/60 backdrop-blur-md rounded-lg p-8 mb-16 border border-orange-500/20 shadow-lg">
+      <div className="relative bg-black/40 backdrop-blur-sm rounded-lg p-8 mb-16 border border-orange-500/20">
         {/* Decorative Corners */}
         <div className="absolute -top-2 -left-2 w-8 h-8 border-t-2 border-l-2 border-orange-500/40 rounded-tl-lg"></div>
         <div className="absolute -bottom-2 -right-2 w-8 h-8 border-b-2 border-r-2 border-pink-500/40 rounded-br-lg"></div>
@@ -102,7 +102,7 @@ const LandingPage = () => {
             <h2 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
               Bridging Culture & Technology
             </h2>
-            <p className="text-gray-200 font-medium">
+            <p className="text-gray-300">
               We specialize in creating digital solutions that enhance and preserve cultural experiences. 
               Our expertise spans across multiple technologies, enabling cultural institutions to thrive 
               in the digital age.
@@ -110,13 +110,13 @@ const LandingPage = () => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <div className="grid grid-cols-2 gap-4">
-              <div className="flex items-center space-x-2 text-gray-200">
-                <Globe className="w-6 h-6 text-orange-500" />
-                <span className="font-medium">Global Reach</span>
+              <div className="flex items-center space-x-2 text-gray-300">
+                <Globe className="w-6 h-6 text-purple-500" />
+                <span>Global Reach</span>
               </div>
-              <div className="flex items-center space-x-2 text-gray-200">
-                <Paintbrush className="w-6 h-6 text-orange-500" />
-                <span className="font-medium">Creative Solutions</span>
+              <div className="flex items-center space-x-2 text-gray-300">
+                <Paintbrush className="w-6 h-6 text-purple-500" />
+                <span>Creative Solutions</span>
               </div>
             </div>
           </div>
