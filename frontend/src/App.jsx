@@ -5,13 +5,6 @@ import Navbar from './componenets/Navbar';
 import Hero from './componenets/Hero';
 import PoetryPage from './componenets/Poetry';
 
-const HomePage = () => (
-  <div>
-    <Hero />
-    <h1>Welcome to the Homepage!</h1>
-  </div>
-);
-
 const App = () => {
   return (
     <HelmetProvider>
@@ -20,9 +13,13 @@ const App = () => {
           <title>Aditya</title>
         </Helmet>
         <Navbar />
+        <Hero/>
+      <PoetryPage/>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/poetry" element={<PoetryPage />} />
+          {/* Define routes here */}
+          {/* <Route path="/" element={<Hero />} />
+          <Route path="/home" element={<Hero />} />
+          <Route path="/poetry" element={<PoetryPage />} /> */}
         </Routes>
       </Router>
     </HelmetProvider>
